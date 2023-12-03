@@ -1,0 +1,10 @@
+version: '3'
+services:
+  express-app:
+    image: hp/express-sqlite:v1.0
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./app:/app
+    environment:
+      - NODE_ENV=production
